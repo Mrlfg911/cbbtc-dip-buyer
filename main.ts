@@ -22,13 +22,13 @@ import { runBars, type BarsState, type Bar, type BuyInput, type SellInput } from
 const SYMBOL = 'CBBTC';
 const BPS = 10_000;
 /** Bars in the mean the dip is measured against. */
-const MEAN_BARS = 60;
+const MEAN_BARS = 90;
 /** How far under the mean, in bps, the close must sit to buy. */
 const DIP_BPS = 80;
 /** Take the bounce, in bps above the fill. */
-const TAKE_BPS = 100;
+const TAKE_BPS = 170;
 /** Cut a position that keeps falling, in bps under the fill. */
-const STOP_BPS = 400;
+const STOP_BPS = 500;
 /** Leave this share of the cash for the fee and the price impact. */
 const CASH_FRACTION = 0.99;
 /** Refuse a fill this far from the close the order was decided on. */
